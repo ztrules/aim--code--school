@@ -25,6 +25,10 @@ a {
 
 #home {
     background-image: url("../images/background.jpg");
+}
+
+article{
+    padding-top: 4rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -33,7 +37,8 @@ a {
     height: 100vh;
     text-align: center;
     box-sizing: border-box;
-    padding-top: 4rem;
+    padding-left: 20vw;
+    padding-right: 20vw
 }
 
 .logo {
@@ -48,4 +53,12 @@ a {
 .tagline {
     font-style: italic;
     font-size: 1.5em;
+}
+
+.photobox {
+    display: flex;
+}
+
+.photobox img {
+    width: 22ch;
 }
