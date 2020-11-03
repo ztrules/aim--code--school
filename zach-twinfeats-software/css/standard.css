@@ -57,6 +57,12 @@ article{
 
 .photobox {
     display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+#about > .photobox:nth-of-type(2) {
+    padding-top: 1em;
 }
 
 .photobox img {
@@ -70,7 +76,7 @@ article{
 .photobox figure {
     font-size: .6em;
     margin-left: 0;
-    margin-top: .3em;
+    margin-top: .3rem;
     margin-right: 1em;
     margin-bottom: 2em;
 }
