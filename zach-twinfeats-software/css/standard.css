@@ -1,6 +1,6 @@
 html{
     font-family: "Open Sans", sans-serif;
-    font-size: x-large;
+    font-size: 16pt;
 }
 
 body{
@@ -61,4 +61,16 @@ article{
 
 .photobox img {
     width: 22ch;
+}
+
+.photobox > :last-child {
+    text-align: left;
+}
+
+.photobox figure {
+    font-size: .6em;
+    margin-left: 0;
+    margin-top: .3em;
+    margin-right: 1em;
+    margin-bottom: 2em;
 }
