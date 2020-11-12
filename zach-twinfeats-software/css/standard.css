@@ -28,6 +28,8 @@ a {
 
 #home {
     background-image: url("../images/background.jpg");
+    text-align: center;
+    left: 0;
 }
 
 .logo {
@@ -48,16 +50,11 @@ a {
     display: flex;
 }
 
-.photobox img {
-    width: 22ch;
-}
-
 .photobox figure {
-    font-size: .6em;
     margin-left: 0;
     margin-top: .3rem;
     margin-right: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 article {
@@ -72,7 +69,11 @@ article {
     box-sizing: border-box;
     padding-left: 20vw;
     padding-right: 20vw;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    transition: left 0.5s ease-in-out;
+    z-index: 2;
 }
 
 .photobox > :last-child {
@@ -175,4 +176,147 @@ article:before {
 #contact a {
     color: #303030;
     text-decoration: underline;
+}
+
+nav > a:hover {
+    color: cyan;
+}
+
+nav > a {
+    transition: color .5s;
+}
+
+#home img.logo:hover {
+    transform: rotate(360deg);
+}
+
+#home img.logo {
+    transition: transform 1s;
+}
+
+#contact a img {
+    transition: transform .25s;
+}
+
+#contact a:hover img {
+    transform: scale(1.2, 1.2);
+}
+
+article + img {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 3;
+}
+
+@keyframes animate-img {
+    0% {
+        left: -100vw;
+    }
+    40% {
+        left: 0;
+    }
+    60% {
+        left: 0;
+    }
+    100% {
+        left: -100vw;
+    }
+}
+
+article:target + img {
+    animation-name: animate-img;
+    animation-duration: 1.5s;
+}
+
+article:target {
+    left: 0;
+}
+
+article:target ~ #home {
+    left: -100vw
+}
+
+.stage {
+    perspective: 1600px;
+    perspective-origin: 50% 0;
+    width: 22ch;
+    margin-right: 1.5em;
+}
+
+.stage .cube {
+    width: 22ch;
+    height: 22ch;
+    transform-style: preserve-3d;
+    position: relative;
+    animation: rotate 10s infinite linear;
+    animation-play-state: paused;
+}
+
+.cube > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.cube:hover {
+    animation-play-state: running !important;
+}
+
+.stage .front {
+    transform: translateZ(11ch);
+}
+
+.stage .back {
+    transform: rotateY(180deg) translateZ(11ch)
+}
+
+.stage .top {
+    transform: rotateX(90deg) translateZ(11ch);
+}
+
+.stage .bottom {
+    transform: rotateX(-90deg) translateZ(11ch);
+}
+
+.stage .left {
+    transform: rotateY(-90deg) translateZ(11ch);
+}
+
+.stage .right {
+    transform: rotateY(90deg) translateZ(11ch);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+    5% {
+        transform: rotateY(90deg);
+    }
+    25% {
+        transform: rotateY(90deg);
+    }
+    30% {
+        transform: rotateY(180deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    55% {
+        transform: rotateY(270deg);
+    }
+    75% {
+        transform: rotateY(270deg);
+    }
+    80% {
+        transform: rotateY(360deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
 }
