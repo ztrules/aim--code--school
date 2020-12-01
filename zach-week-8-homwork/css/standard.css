@@ -1,0 +1,144 @@
+html {
+    font-size: 15pt
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: darkblue;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.2em;
+    font-size: larger;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+nav > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color .5s;
+}
+
+nav > #autobots:hover {
+    color: red;
+}
+
+nav > #decepticons:hover {
+    color: purple;
+}
+
+nav > others:hover {
+    color: darkblue;
+}
+
+#home {
+    background-image: url("../images/cybertron.jpeg");
+    left: 0;
+    height: 100vh;
+}
+
+.title {
+    font-size: 3em;
+}
+
+.photobox {
+    display: flex;
+}
+
+.photobox img {
+    width: 15ch;
+}
+
+.photobox figure {
+    margin-left: 0;
+    margin-top: .3rem;
+    margin-right: 1em;
+    margin-bottom: 2em;
+}
+
+article {
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 4rem;
+    box-sizing: border-box;
+    width: 100%;
+    height: 500vh;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    transition: left 0.5 ease-in-out;
+    z-index: 2
+}
+
+article:target {
+    left: 0;
+}
+
+article:target ~ #home {
+    left: -100vw;
+}
+
+article + img {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 3;
+}
+
+@keyframes animate-img {
+    0% {
+        left: -100vw;
+    }
+    40% {
+        left: 0;
+    }
+    60% {
+        left: 0;
+    }
+    100% {
+        left: -100vw;
+    }
+}
+
+article:target + img {
+    animation-name: animate-img;
+    animation-duration: 1.5s;
+}
+
+article:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: .1;
+    z-index: -1;
+}
+
+#autobots:before {
+    background-image: url("../images/autobot-logo.png");
+}
+
+#decepticons:before {
+    background-image: url("../images/decepticon-logo.png")
+}
+
+#others:before {
+    background-image: url("../images/earth-logo.png")
+}
