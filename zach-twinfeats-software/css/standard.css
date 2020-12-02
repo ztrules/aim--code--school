@@ -322,3 +322,7 @@ article:before {
     
     }
 }
+
+#mobile-nav, #mobile-trigger {
+    display: none;
+}
