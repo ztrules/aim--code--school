@@ -4,7 +4,7 @@
     top: 0.5em;
     left: 0.5em;
     height: 5vh;
-    width: 5vw;
+    width: 5vh;
     z-index: 10;
     padding: 0;
 }
@@ -15,7 +15,7 @@
 
 #nav:target {
     width: 12ch;
-    height: 7vh;
+    height: 7em;
     padding: 0.2em;
 }
 

@@ -313,6 +313,7 @@ article:before {
         transform: rotateY(270deg);
     
     }
+    
     80% {
         transform: rotateY(360deg);
     
