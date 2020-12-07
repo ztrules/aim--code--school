@@ -53,7 +53,7 @@ nav > a:hover {
 }
 
 .logo {
-    width: 9ch;
+    height: 40vh;
 }
 
 .title, .logo {
@@ -324,6 +324,6 @@ article:before {
     }
 }
 
-#mobile-nav, #mobile-trigger {
+#mobile-nav, #mobile-trigger, #bonus {
     display: none;
 }
