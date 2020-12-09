@@ -52,11 +52,6 @@ nav > a:last-child {
 article {
     padding-left: 5vw;
     padding-right: 5vw;
-    font-size: 1.2rem;
-    padding-top: 5vw;
-    height: auto;
-    min-height: 100vh;
-    position: absolute;
 }
 
 .vertical-container {
@@ -112,6 +107,14 @@ article {
     transform: translateX(-50%) rotateY(90deg) translateZ(30vw);
 }
 
+article {
+    font-size: 1.2rem;
+    padding-top: 5vw;
+    height: auto;
+    min-height: 100vh;
+    position: absolute;
+}
+
 figcaption {
     font-size: 1rem;
     margin-bottom: 1em;
@@ -138,4 +141,12 @@ figcaption {
 
 #contact > div {
     top: calc(4vh + 3.5em);
+}
+
+#apps {
+    display: block;
+}
+
+#apps > .sidebar {
+    display: none;
 }

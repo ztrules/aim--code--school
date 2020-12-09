@@ -212,9 +212,10 @@ article:before {
 #contact > div {
     display: flex;
     flex-direction: column;
-    width: calc(2em + 12ch);
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    left: 50%;
+    top: calc(10vh + 3.5rem);
+    transform: translateX(-50%);
     text-align: left;
 }
 
@@ -232,7 +233,6 @@ article:before {
 }
 
 .stage {
-    perspective: 1600px;
     perspective-origin: 50% 0;
     width: 22ch;
     margin-right: 1.5em;
