@@ -324,6 +324,6 @@ article:before {
     }
 }
 
-#mobile-nav, #mobile-trigger, #bonus {
+#mobile-nav, #mobile-trigger, #bonus, .bonus-img {
     display: none;
 }
