@@ -289,3 +289,12 @@ textarea {
 .register-group textarea {
     height: 78px;
 }
+
+.table {
+    margin-bottom: 44px;
+    width: 100%;
+}
+
+.table:last-child {
+    margin-bottom: 0;
+}
