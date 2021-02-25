@@ -7,25 +7,33 @@
 </head>
 <body>
     <header class="primary-header container group">
-        <section class="row-alt">
-            <div class="lead container">
-                <h1>
-                    <a href="index.html"><img src="assets/images/logo-1.
-                    png" alt="logo"></a>
-                </h1>
-            </div>
-        </section>
+        
+        <div class="lead container">
+            <h1 class="logo">
+                <a href="index.html"><img src="assets/images/logo-1.png" alt="logo"></a>
+            </h1>
+        </div>
         <h3>August 24 - 26th Omaha, NE</h3>
     
-        <nav>
+        <nav class="nav primary-nav">
             <ul>
                 <li><a href="index.html">Home</a></li><!--
                 --><li><a href="speakers.html">Speakers</a></li><!--
                 --><li><a href="schedule.html">Schedule</a></li><!--
-                --><li><a href="venue.html">Venue</a></li>
+                --><li><a href="venue.html">Venue</a></li><!--
+                --><li><a href="register.html">Register</a></li>
             </ul>
         </nav>
     </header>
+    <section class="row-alt">
+        <div class="lead container">
+            <h1>Schedule</h1>
+            <p>The Developer Style Conference is filled with innovating technologies,
+                intellectual keynotes, and the most effective hands on technological
+                sessions, all of which are facilitated by industry-leading experts.
+            </p>
+        </div>
+    </section>
     <section class="row">
         <div class="container">
             <table>
@@ -34,7 +42,7 @@
                         <th scope="row">
                             Workshops
                         </th>
-                        <td colspan="2">
+                        <td class="schedule-offset" colspan="2">
                             August 24th
                         </td>
                     </tr>
@@ -44,7 +52,7 @@
                         <th scope="row">
                             <time datetime="08:30:00">8:30 AM</time>
                         </th>
-                        <td colspan="2">
+                        <td class="schedule-offset" colspan="2">
                             Registration
                         </td>
                     </tr>
@@ -64,6 +72,7 @@
                                 Designing a Culture of Design
                             </a>
                         </td>
+                    <tr>
                         <td>
                             <a href="speakers.html#joshua-burden">
                                 <h4>Joshua Burden</h4>
@@ -76,6 +85,19 @@
                                 Lights! Camera! Interaction! Design Inspiration from Filmmakers
                             </a>
                         </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <time datetime="12:30:00">12:30 PM</time>
+                        </th>
+                        <td class="schedule-offset" colspan="2">
+                            Lunch
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <time datetime="14:00:00">2:00 PM</time>
+                        </th>
                         <td>
                             <a href="speakers.html#jennifer-jones">
                                 <h4>Jennifer Jones</h4>
@@ -88,6 +110,9 @@
                                 Crafty Coding: Generating Knitting Patterns
                             </a>
                         </td>
+                    </tr>
+                </tbody>
+            </table>
                         <td>
                             <a href="speakers.html#jon-larsen">
                                 <h4>Jon Larsen</h4>
@@ -205,11 +230,14 @@
 
         <small>&copy; Developer Style Conference</small>
     
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="speakers.html">Speakers</a>
-            <a href="schedule.html">Schedule</a>
-            <a href="venue.html">Venue</a>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li><!--
+                --><li><a href="speakers.html">Speakers</a></li><!--
+                --><li><a href="schedule.html">Schedule</a></li><!--
+                --><li><a href="venue.html">Venue</a></li><!--
+                --><li><a href="register.html">Register</a></li>
+            </ul>
         </nav>
     
     </footer>
