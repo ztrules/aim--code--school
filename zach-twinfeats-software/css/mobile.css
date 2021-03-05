@@ -80,6 +80,7 @@ article {
 
 .photobox img {
     height: 60vw;
+    width: 60vw;
     left: 50%;
 }
 
