@@ -1,14 +1,14 @@
-$(function(){
-    $("#move").click(function() {
+(function () {
+    $("#move").click(function () {
         $("#block1").toggleClass("move");
     });
-    $("#size").click(function() {
+    $("#size").click(function () {
         $("#block1").toggleClass("size");
     });
-    $("#opacity").click(function() {
+    $("#opacity").click(function () {
         $("#block1").toggleClass("opacity");
     });
-    $("#color").click(function() {
+    $("#color").click(function () {
         $("#block1").toggleClass("color");
     });
 })
