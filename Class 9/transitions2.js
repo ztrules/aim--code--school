@@ -1,4 +1,4 @@
-(function () {
+$(function () {
     $("#move").click(function () {
         $("#block1").toggleClass("move");
     });
