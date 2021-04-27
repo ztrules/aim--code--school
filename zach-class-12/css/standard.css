@@ -19,6 +19,7 @@ header > span {
     font-size: 2em;
     line-height: 5rem;
     vertical-align: middle;
+    text-transform: capitalize;
 }
 
 header > nav > a:last-child {
@@ -46,6 +47,7 @@ nav > a {
     background-position: center top;
 }
 
+
 main {
     font-size: 2em;
     position: absolute;
@@ -54,6 +56,10 @@ main {
     transform: translate(-50%, calc(-50% + 2em));
     white-space: nowrap;
     text-align: center;
+}
+
+main h1 {
+    font-family: 
 }
 
 main a {
