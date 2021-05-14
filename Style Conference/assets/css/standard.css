@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 *,
 *:before,
 *:after {
@@ -8,7 +8,7 @@
 }
 
 .container,
-=======
+
 /* missing
 *,
 *::before,
@@ -18,7 +18,6 @@
 */
 
 .container, /**/
->>>>>>> Stashed changes
 .grid {
     margin: 0 auto;
     width: 960 px;
@@ -44,7 +43,7 @@ h1, h3, h4, h5, p { /**/
     text-transform: uppercase;
 }
 
-<<<<<<< Updated upstream
+
 .btn-alt {
     border: 1px solid #dfe2e5;
     padding: 10px 30px;
@@ -72,15 +71,12 @@ h1, h3, h4, h5, p { /**/
     *zoom: 1;
 }
 
-.btn-alt:hover {
-=======
 .btn-alt { /* color should be #dfe2e5 */
-    border: 1px solid #fff;
+    border: 1px solid #dfe2e5;
     padding: 10px 30px;
 }
 
 .btn-alt:hover { /* color should be #647188 */
->>>>>>> Stashed changes
     background: #fff;
     color: #647188;
 }
@@ -92,13 +88,9 @@ h1, h3, h4, h5, p { /**/
     font-size: 14px;
 }
 
-<<<<<<< Updated upstream
-.btn-default:hover {
-    background: #778da148;
-=======
 .btn-default:hover { /* color should be #778da148 */
-    background: #77a198;
->>>>>>> Stashed changes
+    background: #778da148;
+
 }
 
 .logo { /**/
@@ -143,22 +135,15 @@ h1, h3, h4, h5, p { /**/
 }
 
 body {
-<<<<<<< Updated upstream
+
     background-color: rgba(17, 7, 63, 0.89);
-=======
     /* missing body background color */
->>>>>>> Stashed changes
     color: #273a6e;
     font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-<<<<<<< Updated upstream
 h1, h2, h3, h4 {
     color: #6c89db;
-=======
-h1, h2, h3, h4 { /* add semicolon */
-    color: #6c89db
->>>>>>> Stashed changes
 }
 
 h1 { /**/
@@ -220,20 +205,15 @@ p a { /**/
     text-transform: uppercase;
 }
 
-<<<<<<< Updated upstream
 .hero h2 {
     font-size: 36px;
-=======
+}
+
 .hero { /**/
     color: #fff;
     line-height: 44px;
     padding: 22px 80px 66px 80px;
     text-align: center;
-}
-
-.hero h2 { /* add semicolon */
-    font-size: 36px
->>>>>>> Stashed changes
 }
 
 .hero p { /**/
@@ -249,13 +229,9 @@ p a { /**/
     text-align: right;
 }
 
-<<<<<<< Updated upstream
+
 .primary-footer a {
     color: #fff;
-=======
-.primary-footer a { /**/
-    color: #fff
->>>>>>> Stashed changes
 }
 
 .primary-footer a:hover { /**/
@@ -324,13 +300,8 @@ p a { /**/
     margin: 0 0 22px 30px;
 }
 
-<<<<<<< Updated upstream
 form {
     margin-bottom: 22px;
-=======
-form { /* add semicolon */
-    margin-bottom: 22px
->>>>>>> Stashed changes
 }
 
 input, /**/
@@ -340,13 +311,8 @@ textarea {
     Arial, sans-serif;
 }
 
-<<<<<<< Updated upstream
 .register-group label {
     color: #6c89db;
-=======
-.register-group label { /* color should be #6c89db */
-    color: #648880;
->>>>>>> Stashed changes
     cursor: pointer;
     font-weight: 400;
 }
@@ -385,70 +351,6 @@ textarea {
     margin-bottom: 0;
 }
 
-/* Missing
-th,
-td {
-    padding-bottom: 22px;
-    vertical-align: top;
-}
-
-th {
-    padding-right: 45px;
-    text-align: right;
-    width: 20%;
-}
-
-td {
-    width: 40%;
-}
-
-thead {
-    line-height: 44px;
-}
-
-thead th {
-    color: #648880;
-    font-size: 24px;
-}
-
-tbody th {
-    color: #a9b2b9;
-    font-size: 14px;
-    font-weight: 400;
-    padding-top: 22px;
-    text-transform: uppercase;
-}
-
-tbody td {
-    border-top: 1px solid #dfe2e5;
-    padding-top: 21px;
-}
-
-tbody td:first-of-type {
-    padding-right: 15px;
-}
-
-tbody td:last-of-type {
-    padding-left: 15px;
-}
-
-tbody td:only-of-type {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-table a {
-    color: #888;
-}
-
-table h4 {
-    margin-bottom: 0;
-}
-
-.schedule-offset {
-    color: #a9b2b9;
-*/
-
 .teaser img { /**/
     border-radius: 5px;
     display: block;
@@ -463,7 +365,6 @@ table h4 {
     vertical-align: top;
 }
 
-<<<<<<< Updated upstream
 th, td {
     padding-bottom: 22px;
     vertical-align: top;
@@ -526,8 +427,6 @@ table h4 {
     color: #a9b2b9;
 }
 
-=======
-/* Missing
 .group::before,
 .group::after {
     content: "";
@@ -541,5 +440,4 @@ table h4 {
 .group {
     clear: both;
     *zoom: 1;
-} */
->>>>>>> Stashed changes
+}
